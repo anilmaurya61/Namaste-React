@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 import {
   Search as SearchIcon,
@@ -9,6 +9,10 @@ import {
 } from '@mui/icons-material';
 
 const HeaderComponent = () => {
+  const [Auth, setAuth] = useState("Login");
+  function authentication(){
+    setAuth((Auth == "Login") ? "Logout" : "Login")
+  }
   return (
     <>
       <nav>
@@ -38,7 +42,7 @@ const HeaderComponent = () => {
             <li>
               <div className="icon-text-container">
                 <PersonIcon />
-                <span>Anil Maur...</span>
+                <span onClick={authentication}>{Auth}</span>
               </div>
             </li>
             <li>

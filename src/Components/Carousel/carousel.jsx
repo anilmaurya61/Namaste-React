@@ -17,7 +17,7 @@ const Carousel = () => {
         <Heading heading="Best offers for you" />
         <div className="offer-card-container">
           {carouselImages.map((image, index) => (
-            <img src={image} alt="" />
+            <img key={index} src={image} alt="" />
           ))}
         </div>
       </div>

@@ -20,7 +20,7 @@
 
 .restaurant-container,
 .category-container {
-    margin-top: 2rem;
+    margin-top: 5rem;
     padding: 0 5rem 0 5rem;
 }
 
@@ -42,8 +42,8 @@ restaurant-cards-container::-webkit-scrollbar {
     display: none;
 }
 
-.btn{
-    border: 1px solid  grey;
+.btn {
+    border: 1px solid grey;
     border-radius: 20px;
     padding: 10px;
     background-color: #fff;
@@ -51,6 +51,11 @@ restaurant-cards-container::-webkit-scrollbar {
     font-size: 1.5rem;
     color: grey;
 }
+
+.btn:active {
+    box-shadow: inset 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
 .food-cards-container {
     width: 100%;
     margin: 2rem auto;
@@ -60,7 +65,7 @@ restaurant-cards-container::-webkit-scrollbar {
     gap: 1.3rem;
 }
 
-.search-container input{
+.search-container input {
     height: 3rem;
     width: 20rem;
     border: 2px solid grey;

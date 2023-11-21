@@ -59,3 +59,12 @@ restaurant-cards-container::-webkit-scrollbar {
     flex-wrap: wrap;
     gap: 1.3rem;
 }
+
+.search-container input{
+    height: 3rem;
+    width: 20rem;
+    border: 2px solid grey;
+    border-radius: 20px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
